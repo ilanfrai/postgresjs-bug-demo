@@ -89,7 +89,7 @@ async function main() {
     
     
     const someOtherTableDataAfterError = await sql`SELECT * FROM some_other_table`;
-    console.log('Number of items in some_other_table:', someOtherTableDataAfterError.length);
+    console.log('Number of items in some_other_table AFTER ERROR:', someOtherTableDataAfterError.length);
     console.log('Data in some_other_table:', someOtherTableDataAfterError);
   } finally {
     // Close the connection
